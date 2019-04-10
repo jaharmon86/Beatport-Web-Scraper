@@ -1,0 +1,101 @@
+,artists,track_title,release,date_pulled,chart_rank
+0,['Sebastien Leger'],Lanarka,2/25/19,4/6/19,1
+1,"['CamelPhat', 'Jem Cooke', 'Cristoph']",Breathe,11/16/18,4/6/19,2
+2,"['CASSIMM', 'Chus & Ceballos']",Dances with Wolves,2/1/19,4/6/19,3
+3,"['Matan Caspi', ""E'sh""]",Eidothea,3/18/19,4/6/19,4
+4,"['Aneesh Gera', 'Paul Thomas', 'White-Akre']",Solace,3/1/19,4/6/19,5
+5,"['NekliFF', 'Rafael Cerato', 'Kasper Koman']",Marrakesh,2/25/19,4/6/19,6
+6,"['Diana Miro', '8Kays', 'Jerome Isma-Ae']",Inside feat. Diana Miro,3/11/19,4/6/19,7
+7,['Budakid'],A Molton Arrow,3/25/19,4/6/19,8
+8,['Paul Thomas'],Allegro,3/22/19,4/6/19,9
+9,"['Avasono', 'Ziger']",Riells,3/11/19,4/6/19,10
+10,['BLR'],Méduse,3/22/19,4/6/19,11
+11,['Stan Kolev'],Selcouth,3/18/19,4/6/19,12
+12,"['Formel', 'Ziger']",Unawatuna,3/25/19,4/6/19,13
+13,"['Darin Epsilon', 'Marc DePulse']",Anamorphosis,3/29/19,4/6/19,14
+14,"['IKARIUS', 'Pavel Petrov']",Time,3/1/19,4/6/19,15
+15,['Space Motion'],Epic,10/29/18,4/6/19,16
+16,['Applescal'],Saints,2/22/19,4/6/19,17
+17,"['Budakid', 'Zweers']",Estersveld feat. Zweers,3/25/19,4/6/19,18
+18,['Stan Kolev'],Inscape,12/24/18,4/6/19,19
+19,['Cid Inc.'],Turning Pages,3/25/19,4/6/19,20
+20,"['Beckers', 'D-Nox', 'Navar']",Polyacid,2/11/19,4/6/19,21
+21,['Cid Inc.'],Via Karelia,3/25/19,4/6/19,22
+22,['Stan Kolev'],Crossroads,3/22/19,4/6/19,23
+23,['King & Early'],Moving Forward,3/8/19,4/6/19,24
+24,"['Luke Mandala', 'Bizio', 'Antrim']",Mother of Dragons,3/22/19,4/6/19,25
+25,['Stan Kolev'],Fury,4/1/19,4/6/19,26
+26,"['Virtual Self', 'Lane 8']",Ghost Voices,2/12/19,4/6/19,27
+27,"['Dabeat', 'Kamilo Sanclemente', 'Kasper Koman']",Implant,2/11/19,4/6/19,28
+28,['Avoure'],Aura,11/29/18,4/6/19,29
+29,"['Darin Epsilon', 'Marc DePulse']",Penrose,3/29/19,4/6/19,30
+30,['Marcus Meinhardt'],Bamboo,6/29/18,4/6/19,31
+31,['Ben Bohmer'],After Earth,1/5/18,4/6/19,32
+32,"['Prospa', 'Will Easton']",Prayer,2/22/19,4/6/19,33
+33,"['Ezequiel Arias', 'Artfaq']",Babel,2/18/19,4/6/19,34
+34,['Stas Drive'],Getaria,4/1/19,4/6/19,35
+35,"['D-Nox', 'Uone', 'Western', 'Paul Anthonee']",Never,3/11/19,4/6/19,36
+36,"['Alex Graham', 'Kristian Nairn']",Life Is Too Short,3/22/19,4/6/19,37
+37,"['Max Freegrant', 'Slow Fish']",We Got Space,3/8/19,4/6/19,38
+38,"['Motel Sazani', 'Monastetiq']",E Ke Keq Aty,4/1/19,4/6/19,39
+39,"['Antrim', 'Black 8']",Experiments,2/25/19,4/6/19,40
+40,['Sebastien Leger'],Sablier,2/25/19,4/6/19,41
+41,"['Sebastian Sellares', 'Simply City']",Epiphany in the Woods,3/25/19,4/6/19,42
+42,['Roger Martinez'],Songlines,3/18/19,4/6/19,43
+43,"['Beckers', 'D-Nox']",Polyacid,2/11/19,4/6/19,44
+44,"['Stan Kolev', 'Austin Pettit']",Listen,1/11/19,4/6/19,45
+45,['Memory (ARG)'],Quique,3/25/19,4/6/19,46
+46,['Stan Kolev'],Phases,3/8/19,4/6/19,47
+47,['Sam Heyman'],Betelgeuse,2/28/19,4/6/19,48
+48,['Kasper Koman'],Hi,12/10/18,4/6/19,49
+49,['Space Motion'],Unihorn,10/29/18,4/6/19,50
+50,['Remcord'],Green Memories,4/1/19,4/6/19,51
+51,"['Remcord', 'Donamaria']",Follow The Light,4/1/19,4/6/19,52
+52,['EdOne'],Feelings,4/1/19,4/6/19,53
+53,['Habischman'],Teleport,3/29/19,4/6/19,54
+54,"['Stan Kolev', 'D-Nox', 'K.A.L.I.L.']",Selcouth,3/18/19,4/6/19,55
+55,"['Gux Jimenez', 'Stan Kolev']",Raices,3/11/19,4/6/19,56
+56,"[""Rafa'EL"", 'Black 8']",Revival,4/1/19,4/6/19,57
+57,['Pretty Pink'],Melting,3/29/19,4/6/19,58
+58,['D-Formation'],Closer,3/4/19,4/6/19,59
+59,['Stan Kolev'],Inscape,4/1/19,4/6/19,60
+60,['Matt Fax'],To The Ground,2/8/19,4/6/19,61
+61,['Stan Kolev'],Ananda,4/1/19,4/6/19,62
+62,"['Simos Tagias', 'Berni Turletti']",Auquinco,3/29/19,4/6/19,63
+63,"['Eric Lune', 'Paul Angelo', 'Don Argento']",Matter of Fact,3/11/19,4/6/19,64
+64,"['Haze-M', 'Juan Elvadin', 'Stan Kolev']",Replika,2/25/19,4/6/19,65
+65,"['Matan Caspi', ""E'sh""]",Yemoja,12/17/18,4/6/19,66
+66,"['Alexey Romeo', 'Michon']",First Day on Earth,3/29/19,4/6/19,67
+67,['DJ San'],7th Dimension,3/22/19,4/6/19,68
+68,"['D-Nox', 'Uone', 'Western', 'Dousk']",Never,3/11/19,4/6/19,69
+69,"['Matias Vila', 'Hermanez', 'Eran Aviner']",Ahora,1/14/19,4/6/19,70
+70,"['Affkt', 'Damon Jee']",Parafernalia,12/23/18,4/6/19,71
+71,"['fran&co', 'Stan Kolev']",Symphony From Outer Space,10/1/18,4/6/19,72
+72,['Stan Kolev'],Nu Moon,8/6/18,4/6/19,73
+73,['Ziger'],After Midnight,7/16/18,4/6/19,74
+74,"['Kamilo Sanclemente', 'Andre Moret']",Acacias,4/1/19,4/6/19,75
+75,['Stas Drive'],Forgiveness,4/1/19,4/6/19,76
+76,"['Kamilo Sanclemente', 'Andre Moret', 'Arnas D']",Acacias,4/1/19,4/6/19,77
+77,"['Antrim', 'Ezequiel Arias']",Reimagined,3/25/19,4/6/19,78
+78,"['GRAZZE', 'Stan Kolev']",Lost,3/8/19,4/6/19,79
+79,"['DJ San', 'Stan Kolev']",Put The Kettle On,3/4/19,4/6/19,80
+80,"['Juan Pablo Torrez', 'Kamilo Sanclemente']",Dhama,3/25/19,4/6/19,81
+81,['Gai Barone'],Boston,3/25/19,4/6/19,82
+82,['Kamilo Sanclemente'],From The Sky,3/1/19,4/6/19,83
+83,"['D-Nox', 'K.A.L.I.L.', 'Stan Kolev', 'Matan Caspi']",The Seed,11/12/18,4/6/19,84
+84,['Dosem'],Externalizer,9/28/18,4/6/19,85
+85,"[""Rafa'EL"", 'Kymatik']",First Thought,4/1/19,4/6/19,86
+86,"['Gabriel Batz', 'Subandrio', 'Nishan Lee']",Aquil,4/1/19,4/6/19,87
+87,['David Jackson'],Curiosa,3/29/19,4/6/19,88
+88,['Artche'],Tell Me,3/22/19,4/6/19,89
+89,['Kymatik'],Bloemen En Flinders,3/4/19,4/6/19,90
+90,['The Organism'],Root,3/4/19,4/6/19,91
+91,"['Audioglider', 'Aman Anand', 'Priya Sen']",Caging the Sun,2/22/19,4/6/19,92
+92,"['Rue', 'Alastor', 'Jerome Isma-Ae']",Untethered,1/21/19,4/6/19,93
+93,"['Simon Berry', 'Luke Brancaccio', 'Yotto']",I Hear This,12/3/18,4/6/19,94
+94,['White-Akre'],The Crux,4/1/19,4/6/19,95
+95,['Sebastian Sellares'],Epiphany in the Woods,3/25/19,4/6/19,96
+96,['Gadi Mitrani'],Mirror Room,3/25/19,4/6/19,97
+97,"['Stan Kolev', 'Petar Dundov']",Selcouth,3/18/19,4/6/19,98
+98,['Steve Parry'],Michelada,3/15/19,4/6/19,99
+99,['Th;en'],Shira,3/11/19,4/6/19,100
