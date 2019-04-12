@@ -8,48 +8,81 @@
   <title>Beatport</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<style>
+  body {
+    background-color: rgba(164, 157, 226, 0.493);
+  }
+  #clock {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(8, 8, 8);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(46, 25, 238);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+  }
+</style>
 
 <body>
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Beatport 2.0</h1>
+        <h1>Beatport Webscraping</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-5">
         <div class="well">
           <h5>Select the Song:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <!-- <div class="panel panel-primary">
+        <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">Song Information</h3>
           </div>
-          <div id="tab" class="panel-body"></div> 
-        </div> -->
+          <div id="tab" class="panel-body"></div>
+        </div>
       </div>
-      <div class="col-md-5">
-        <div id="scatter"></div>
-      </div>
-      <!-- <div class="col-md-5">
-        <div id="gauge"></div>
-      </div> -->
+    <div class="col-md-7">
+      <div id="scatter"></div>
     </div>
   </div>
-  <!-- <div class="row">
-    <div class="col-md-12">
-      <div id="bubble"></div>
-    </div>
-  </div> -->
+  </div> 
 
-  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4 offset-md-4">
+        <h3>Current Time. Next update at 7:00AM.</h3>
+        <div id="clock">8:23PM</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script>
+    const clock = document.getElementById('clock');
+    setInterval(() => {
+      const now = moment();
+      const humanReadable = now.format('hh:mm:ssA');
+      clock.textContent = humanReadable;
+    }, 1000);
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Thank you for visiting our site!</span>
+    </div>
+  </footer>
 </body>
 
 </html>

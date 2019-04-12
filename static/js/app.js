@@ -1,13 +1,24 @@
 function buildMetadata(track_title) {
 
   d3.json(`songs/${track_title}`).then(function (data) {
-    // console.log(data)
-    d3.select('#sample-metadata').html('')
-    let myHtmlblock = d3.select('#sample-metadata');
-    Object.keys(data).forEach(key => {
-      myHtmlblock.append('p').text(key + " : " + data[key])
-    })
+    let artist_name = data.map(x => x.artists)[0]
+      .replace("[", "")
+      .replace("]", "")
+    console.log(typeof artist_name, artist_name)
+    console.log('song data:' + JSON.stringify(data))
+    d3.select('#tab').html('')
+    let myHtmlblock = d3.select('#tab');
+    myHtmlblock.append('h4').text(`${track_title} by ${artist_name}`)
+    myHtmlblock.append('hr')
+    
 
+    Object.keys(data).forEach(key => {
+      myHtmlblock.append('p').text(
+        `
+        date_pulled : ${data[key].date_pulled},
+        chart rank : ${data[key].chart_rank}`)
+
+    })
   })
 }
 
@@ -20,83 +31,60 @@ function buildCharts(song_name) {
 
   d3.json(url).then(function (data) {
 
-   console.log(data)
-
-    let myvalues = data.date_pulled;
-    let myLables = data.chart_rank;
+   // date_pulled, chart_rank
+   let myDates = data.map(x => x.date_pulled)
+   let myRanks = data.map(x => x.chart_rank)
     // // Plotly scatter Chart
     var trace1 = {
-       x: myvalues,
-       y: myLables,
+       x: myDates,
+       y: myRanks,
       type: 'scatter',
-      mode: 'markers'
+      mode: 'lines+markers'
      };
     
-    // var data = [trace1];
+    //  var layout = {yaxis: {autorange: 'reversed'}};
+     var layout = {
+      title: {
+        text:'Song on the Top 100',
+        font: {
+          family: 'Arial, sans-serif',
+          size: 24
+        },
+      },
+      
+      xaxis: {
+  
+        title: {
+          text: 'Days on the Top 100',
+          font: {
+            family: 'Arial, sans-serif',
+            size: 18,
+            color: '#7f7f7f'
+          }
+        },
+      },
+      
+      yaxis: {
+       autorange: 'reversed',
+        title: {
+          text: 'Top 100 Rank',
+          font: {
+            family: 'Arial, sans-serif',
+            size: 18,
+            color: '#7f7f7f'
+          }
+        }
+      }
     
-    // Plotly.newPlot('scatter', data);
-    // var staticData = [{
-    //   values: myvalues,
-    //   labels: myLables,
-    //   type: 'scatter'
-    // }];
-
-    // var layout = {
-    //   height: 400,
-    //   width: 500
-    // };
-
-    // var trace1 = {
-    //   x: ,
-    //   y: [10, 15, 13, 17],
-    //   mode: 'markers',
-    //   type: 'scatter'
-    // };
-    
-    var trace2 = {
-      x: [2, 3, 4, 5],
-      y: [16, 5, 11, 9],
-      mode: 'lines',
-      type: 'scatter'
     };
+     console.log(trace1)
     
-    var trace3 = {
-      x: [1, 2, 3, 4],
-      y: [12, 9, 15, 12],
-      mode: 'lines+markers',
-      type: 'scatter'
-    };
     
-    var data = [trace1, trace2, trace3];
-    
-    Plotly.newPlot('scatter', data);
+    Plotly.newPlot('scatter', [trace1], layout);
 
-    //Plotly.newPlot('scatter', staticData, layout);
-    // // start bubble chart from plotly
-    // var trace1 = {
-    //   y: myvalues1,
-    //   x: myLables1,
-    //   mode: 'markers',
-    //   marker: {
-    //     color: myLables1,
-    //     opacity: myvalues1,
-    //     size: myvalues1,
-    //   }
-    // };
-
-    // var data = [trace1];
-
-    // var layout = {
-    //   title: 'otu_lables',
-    //   showlegend: true,
-    //   height: 600,
-    //   width: 1000
-    // };
-
-    // Plotly.newPlot('bubble', data, layout);
+   
   })
 }
-
 
 function init() {
   // Grab a reference to the dropdown select element
@@ -113,6 +101,7 @@ function init() {
 
     // Use the first sample from the list to build the initial plots
     const firstSample = sampleNames[0];
+    console.log("First Sample" + firstSample)
     buildCharts(firstSample);
     buildMetadata(firstSample);
   });
